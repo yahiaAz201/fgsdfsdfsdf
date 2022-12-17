@@ -13,7 +13,9 @@ app.get("/", async (req, res) => {
       },
     }
   );
-  res.send(response.data);
+  res.json({
+    server: "hello world",
+  });
 });
 
 app.listen(port, () => {
